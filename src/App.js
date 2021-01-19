@@ -2,8 +2,7 @@ import React from 'react'
 import Header from './components/Header'
 
 function App() {
-    return ( <div>
-            <h1>Hello from React</h1>
+    return ( <div className="container">
             <Header />
     </div> 
     )
