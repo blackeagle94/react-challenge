@@ -1,10 +1,14 @@
 import React from 'react'
+import Button from './Button'
 
-function Header({title}) {
+function Header({title, onAdd, showAddTask}) {
+
+   
+
     return (
         <header className="header">
             <h1>{title}</h1>
-            <button className="btn">Add</button>
+            <Button color={showAddTask ? 'red' : 'green'} text={showAddTask ? 'Close' : 'Add'} onClick={onAdd}/>
         </header>
     )
 }
